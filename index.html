@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- Fonts google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+  <!-- End fonts google -->
+
+  <link rel="stylesheet" href="./static/style/style.css">
+</head>
+<body>
+  
+  <!-- logo -->
+  <div class="logo">
+    <img src="./static/svg/logo.svg" alt="alura - Leonardo D'Ulivo">
+  </div>
+
+  <!-- container -->
+  <div class="container">
+    
+    <header>
+      <h1>Poke Ahorcado</h1>
+    </header>
+
+    <main>
+      <!-- initial view -->
+      <section class="view_0" id="view_0">
+        <img src="./static/svg/pokeball.svg" alt="pokeball">
+      </section>
+      
+      <!-- insert view -->
+      <section class="view_1" id="view_1">
+        <img src="./static/img/pikachu_what_word.webp" alt="que palabra">
+        <input type="text" id="myPlayerSecret">
+        <span>máximo 10 caracteres</span>
+      </section>
+      
+      <!-- play view -->
+      <section class="view_2" id="view_2">
+        <div class="body_draw">
+          <div class="picachu_draw" id="poke_body"></div>
+          <!-- <canvas class="draw" id="draw"></canvas> -->
+          <div class="draw" id="draw">
+          </div>
+        </div>
+        <input type="text" id="textKey" maxlength="1" placeholder="click aquí">
+        <h2 id="h2wrongLetters"></h2>
+        <ul class="lineas_letras" id="lineas_letras"></ul>
+        <input type="text" id="textKeyAux">
+        <img src="" alt="" class="quien_es" id="quien_es">
+      </section>
+    </main>
+
+    <!-- botones -->
+    <footer class="allBtn" id="allBtn">
+      <button id="btn1" onclick="pokeRotate('btn1')">
+        <img src="./static/svg/pokeball.svg" alt="pokeball">
+        <p>Nuevo juego</p>
+      </button>
+
+      <button id="btn2" onclick="pokeRotate('btn2')">
+        <img src="./static/svg/pokeball.svg" alt="pokeball">
+        <p>Desistir</p>
+      </button>
+    </footer>
+
+  </div>
+
+  <!-- modal -->
+  <div class="loser" id="loser">
+    <h2>uff!! casi lo logras!</h2>
+    <div></div>
+  </div>
+
+  <!-- footer de página -->
+  <footer class="footer">
+    <p>Leonardo D'Ulivo</p>
+    <ul>
+      <li>
+        <a
+          href="https://www.linkedin.com/in/ldulivo/"
+          target="_blank" rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://github.com/ldulivo/oracle_ONE_alura_challenge_sprint_02"
+          target="_blank" rel="noopener noreferrer"
+        >
+          Código fuente
+        </a>
+      </li>
+    </ul>
+  </footer>
+
+  <!-- script con funciones -->
+  <script src="./static/js/script.js"></script>
+</body>
+</html>
